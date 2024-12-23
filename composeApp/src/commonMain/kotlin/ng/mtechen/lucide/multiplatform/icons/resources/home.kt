@@ -1,12 +1,21 @@
 package ng.mtechen.lucide.multiplatform.icons.resources
 
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
 /**
  * Home icon implementation for Compose Multiplatform
  *
  * @param size Icon size in dp (default: 24.dp)
  * @param color Icon color (default: Color.Black)
  */
-fun Home(size: Int = 24, color: Color = Color.Black): ImageVector {
+fun homeIcon(size: Int = 24, color: Color = Color.Black): ImageVector {
     return ImageVector.Builder(
         name = "home",
         defaultWidth = size.dp,
