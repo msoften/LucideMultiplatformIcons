@@ -11,21 +11,18 @@ import androidx.compose.ui.unit.dp
 
 /**
  * Home icon implementation for Compose Multiplatform
- *
- * @param size Icon size in dp (default: 24.dp)
- * @param color Icon color (default: Color.Black)
  */
-fun homeIcon(size: Int = 24, color: Color = Color.Black): ImageVector {
+fun home(): ImageVector {
     return ImageVector.Builder(
         name = "home",
-        defaultWidth = size.dp,
-        defaultHeight = size.dp,
+        defaultWidth = 24.dp,
+        defaultHeight = 24.dp,
         viewportWidth = 24f,
         viewportHeight = 24f
     ).apply {
         path(
             fill = SolidColor(Color.Transparent),
-            stroke = SolidColor(color),
+            stroke = SolidColor(Color.Black),
             strokeLineWidth = 2f,
             strokeLineCap = StrokeCap.Round,
             strokeLineJoin = StrokeJoin.Round,
@@ -47,7 +44,7 @@ fun homeIcon(size: Int = 24, color: Color = Color.Black): ImageVector {
         // Door
         path(
             fill = SolidColor(Color.Transparent),
-            stroke = SolidColor(color),
+            stroke = SolidColor(Color.Black),
             strokeLineWidth = 2f,
             strokeLineCap = StrokeCap.Round,
             strokeLineJoin = StrokeJoin.Round,
